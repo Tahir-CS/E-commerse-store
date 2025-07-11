@@ -1,73 +1,63 @@
-# Welcome to your Lovable project
+🛒 Breezy Shop – Modern E-commerce Store (React + Supabase)
+Welcome to Breezy Shop, a full-stack e-commerce web application built with React, TypeScript, Tailwind CSS, and Supabase. This project demonstrates a real-world, production-ready online store with secure admin controls, modern UI, and a scalable backend.
 
-## Project info
+🚀 Features
+Beautiful, Responsive UI – Built with React, TypeScript, and Tailwind CSS for a seamless experience on any device.
+Product Catalog – Browse, search, and view detailed product pages with images, features, and categories.
+Shopping Cart & Checkout – Add products to your cart, update quantities, and complete purchases.
+User Authentication – Secure sign up, login, and sessionmanagement powered by Supabase Auth.
+Admin Dashboard – Only authorized admins can add, edit, or delete products via a protected panel.
+Role-Based Access Control – Database-level security ensures only admins can modify products, even via API.
+Real-Time Updates – All product changes are instantly reflected for all users.
+Modern Codebase – Clean, modular, and scalable code
+structure using React hooks and context.
+🛡️ Security Highlights
+Environment Variables Protected – All secrets and API keys are stored in .env.local (never committed).
+Supabase Row-Level Security (RLS) – Only users with admin privileges can modify products or categories at the database level.
+Frontend & Backend Protection – Admin UI is hidden from non-admins, and backend policies prevent unauthorized access.
+🧑‍💻 Tech Stack
+Frontend: React, TypeScript, Tailwind CSS, Vite
+Backend: Supabase (Postgres, Auth, Storage)
+State Management: React Context, React Query
+UI Components: Custom + Radix UI
+Notifications: Sonner
+✨ Demo
+“A modern, fast, and secure e-commerce experience. Try logging in as an admin to manage products!”
 
-**URL**: https://lovable.dev/projects/cc0df20f-af86-4764-9c45-5a668173cd20
+🛠️ Getting Started
+Clone the repo:
+git clone https://github.com/yourusername/breezy-shop.git
 
-## How can I edit this code?
+Install dependencies:
+npm install
 
-There are several ways of editing your application.
+Set up environment variables:
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/cc0df20f-af86-4764-9c45-5a668173cd20) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Copy .env.local.example to .env.local
+Add your Supabase project URL and anon key
+Run the app:
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+Supabase Setup:
+Supabase Setup:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Run the provided SQL scripts in your Supabase SQL editor to create tables and sample data.
+👤 Admin Access
+Only users with the is_admin flag in the database can access the admin dashboard and manage products.
+To become an admin, set your user’s is_admin field to true in the user_profiles table.
+📂 Project Structure
+src/
+  components/      # Reusable UI components
+  context/         # Auth and Cart context providers
+  hooks/           # Custom React hooks (including admin logic)
+  lib/             # Supabase client and utilities
+  pages/           # Main app pages (Home, Product, Cart, Admin, etc.)
+  data/            # Sample product data
+  💡 Why This Project?
+Production-Ready Patterns: Real authentication, secure admin, and scalable code.
+Modern UI/UX: Clean, accessible, and mobile-friendly.
+Recruiter Appeal: Demonstrates both frontend and backend skills, security best practices, and real-world features.
+📧 Contact
+Feel free to connect with me on LinkedIn or reach out at mtahirbutt1005@gmail.com.
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/cc0df20f-af86-4764-9c45-5a668173cd20) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Like what you see? Star this repo and let’s build something amazing together
