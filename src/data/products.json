@@ -1,0 +1,58 @@
+
+[
+  {
+    "id": 1,
+    "name": "UltraComfort Chair",
+    "description": "A supremely comfy chair for your modern home or office.",
+    "price": 129.99,
+    "image": "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Ergonomic design for all-day comfort",
+      "Adjustable height and tilt",
+      "Premium leatherette upholstery",
+      "Supports up to 250 lbs"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Zenith Laptop",
+    "description": "Fast, reliable, and stylish. Everything you want in a laptop.",
+    "price": 1499,
+    "image": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Intel Core i9 13th Gen Processor",
+      "16GB DDR5 RAM, 1TB SSD",
+      "16\" Retina display with 120Hz refresh",
+      "Thunderbolt 4, HDMI, USB-C",
+      "14-hour battery life",
+      "Ultra-thin aluminum chassis",
+      "Fingerprint reader & FHD webcam"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Cozy Blanket",
+    "description": "Stay warm and cozy with this premium blanket.",
+    "price": 49,
+    "image": "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Hypoallergenic premium cotton",
+      "Machine washable",
+      "Extra large size (200x150cm)",
+      "Reversible color design"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Smart Lamp",
+    "description": "Illuminate your room in style with smart IoT features.",
+    "price": 89.99,
+    "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Voice and app control (Alexa/Google)",
+      "16 million RGB colors",
+      "Wireless charging base",
+      "Programmable schedules"
+    ]
+  }
+]
