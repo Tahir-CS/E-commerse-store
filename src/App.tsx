@@ -29,7 +29,7 @@ const App = () => (
           <CartProvider>
             <Navbar />
             <div className="min-h-[70vh] flex flex-col justify-between">
-              <main className="flex-1">
+              <main className="flex-1 main-content">
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/product/:id" element={<ProductDetail />} />

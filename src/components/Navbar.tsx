@@ -20,22 +20,31 @@ const Navbar = () => {
   const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
 
   return (
-    <nav className="w-full bg-background border-b sticky top-0 z-50">
+    <nav className="w-full professional-nav sticky top-0 z-50">
       <div className="container flex items-center justify-between h-16">
-        <Link to="/" className="text-2xl font-bold text-primary hover:underline">
-          ShopEase
+        <Link to="/" className="group flex items-center space-x-2 transition-colors">
+          <div className="text-2xl font-black tracking-tight">
+            <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+              Shop
+            </span>
+            <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
+              Ease
+            </span>
+          </div>
+          <div className="h-6 w-0.5 bg-gradient-to-b from-primary to-purple-600 opacity-50"></div>
+          <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">Premium</span>
         </Link>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-6">
           <Link
             to="/"
-            className={`hover:underline transition ${location.pathname === "/" && "underline font-semibold"}`}
+            className={`hover:text-primary transition-colors font-medium ${location.pathname === "/" ? "text-primary font-semibold" : "text-foreground"}`}
           >
             Home
           </Link>
           {isAdmin && (
             <Link
               to="/admin"
-              className={`hover:underline transition flex items-center gap-1 ${location.pathname === "/admin" && "underline font-semibold"}`}
+              className={`hover:text-primary transition-colors flex items-center gap-1 font-medium ${location.pathname === "/admin" ? "text-primary font-semibold" : "text-foreground"}`}
             >
               <Shield className="h-4 w-4" />
               Admin
@@ -43,11 +52,11 @@ const Navbar = () => {
           )}
           <Link
             to="/cart"
-            className="relative flex items-center gap-1 group"
+            className="relative flex items-center gap-1 group hover:text-primary transition-colors"
             aria-label="Cart"
           >
-            <ShoppingCart />
-            <span>Cart</span>
+            <ShoppingCart className="h-5 w-5" />
+            <span className="font-medium">Cart</span>
             {cartCount > 0 && (
               <span className="absolute -top-2 -right-2 bg-primary text-xs text-primary-foreground rounded-full px-2 py-0.5">
                 {cartCount}
